@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tender touch massage — Marco Island, FL</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--p:#7B68EE;--pl:#98FB98;--bg:#0a0a0f;--card:rgba(255,255,255,0.05);--cardh:rgba(255,255,255,0.08);--t:#fff;--ts:#a0a0b0;--g:linear-gradient(135deg,#7B68EE,#98FB98);--gl:rgba(255,255,255,0.06);--b:rgba(255,255,255,0.1)}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--t);overflow-x:hidden;line-height:1.6}
+h1,h2,h3{font-family:'Poppins',sans-serif}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:18px 40px;display:flex;justify-content:space-between;align-items:center;background:rgba(10,10,15,0.8);backdrop-filter:blur(20px);border-bottom:1px solid var(--b)}
+.logo{font-family:'Poppins',sans-serif;font-size:1.3rem;font-weight:800;background:var(--g);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.ncta{background:var(--g);color:#fff;padding:10px 24px;border-radius:50px;text-decoration:none;font-weight:600;font-size:0.85rem}
+.hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;padding:120px 40px 80px}
+.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse at 30% 50%,rgba(255,107,53,0.12) 0%,transparent 60%),radial-gradient(ellipse at 70% 30%,rgba(0,212,170,0.08) 0%,transparent 50%)}
+.hero-c{position:relative;z-index:1;max-width:700px}
+.hero-badge{display:inline-block;background:var(--gl);border:1px solid var(--b);padding:8px 20px;border-radius:50px;font-size:0.85rem;margin-bottom:24px}
+.hero h1{font-size:clamp(2.5rem,5vw,4rem);font-weight:800;line-height:1.1;margin-bottom:24px}
+.hero h1 span{background:var(--g);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero p{font-size:1.15rem;color:var(--ts);margin-bottom:40px;max-width:550px;line-height:1.8}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:16px 36px;border-radius:50px;text-decoration:none;font-weight:700;font-size:1rem;transition:all 0.3s}
+.btn-p{background:var(--g);color:#fff}
+.btn-p:hover{transform:translateY(-3px);box-shadow:0 12px 40px rgba(255,107,53,0.3)}
+.btn-s{background:var(--gl);color:var(--t);border:1px solid var(--b)}
+.stats{display:flex;gap:40px;margin-top:60px;padding-top:40px;border-top:1px solid var(--b)}
+.stat-n{font-size:2rem;font-weight:800;color:var(--p)}
+.stat-l{font-size:0.85rem;color:var(--ts)}
+section{padding:100px 40px}
+.stitle{font-size:clamp(2rem,4vw,2.8rem);font-weight:800;text-align:center;margin-bottom:16px}
+.ssub{text-align:center;color:var(--ts);font-size:1.05rem;max-width:600px;margin:0 auto 60px}
+.sgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;max-width:1100px;margin:0 auto}
+.sc{background:var(--card);border:1px solid var(--b);border-radius:20px;padding:36px 28px;transition:all 0.4s;position:relative;overflow:hidden}
+.sc:hover{transform:translateY(-8px);box-shadow:0 20px 60px rgba(0,0,0,0.3);background:var(--cardh)}
+.si{width:52px;height:52px;background:var(--gl);border:1px solid var(--b);border-radius:14px;display:flex;align-items:center;justify-content:center;margin-bottom:20px;font-size:24px}
+.sc h3{font-size:1.2rem;font-weight:700;margin-bottom:10px}
+.sc p{color:var(--ts);font-size:0.9rem;line-height:1.7}
+.about{background:var(--card)}
+.agrid{display:grid;grid-template-columns:1fr 1fr;gap:60px;max-width:1100px;margin:0 auto;align-items:center}
+.aimg{width:100%;aspect-ratio:4/5;background:linear-gradient(135deg,rgba(255,107,53,0.15),rgba(0,212,170,0.1));border-radius:24px;display:flex;align-items:center;justify-content:center;font-size:7rem;border:1px solid var(--b)}
+.acon h2{font-size:2.2rem;font-weight:800;margin-bottom:20px}
+.acon p{color:var(--ts);font-size:1rem;margin-bottom:14px;line-height:1.8}
+.contact{background:var(--card)}
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:60px;max-width:1000px;margin:0 auto}
+.ci{display:flex;align-items:center;gap:14px;margin-bottom:18px}
+.cicon{width:44px;height:44px;background:var(--gl);border:1px solid var(--b);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:16px}
+.ctxt strong{color:var(--t);display:block;margin-bottom:2px;font-size:0.9rem}
+.ctxt{color:var(--ts);font-size:0.9rem}
+.mwrap{border-radius:20px;overflow:hidden;border:1px solid var(--b);min-height:320px}
+.mwrap iframe{width:100%;min-height:320px;border:0;display:block}
+.wa-float{position:fixed;bottom:28px;right:28px;width:56px;height:56px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 30px rgba(37,211,102,0.4);z-index:99;font-size:26px;text-decoration:none;transition:transform 0.3s}
+.wa-float:hover{transform:scale(1.1)}
+.sticky{position:fixed;bottom:0;left:0;right:0;z-index:98;background:rgba(10,10,15,0.95);backdrop-filter:blur(20px);border-top:1px solid var(--b);padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px;transform:translateY(100%);transition:transform 0.4s}
+.sticky.v{transform:translateY(0)}
+.sbtn{display:inline-flex;align-items:center;gap:6px;padding:10px 18px;border-radius:50px;text-decoration:none;font-weight:700;font-size:0.8rem}
+.sbtn-w{background:#25D366;color:#fff}
+.sbtn-c{background:var(--g);color:#fff}
+footer{padding:50px 40px 80px;border-top:1px solid var(--b);text-align:center}
+.flogo{font-family:'Poppins',sans-serif;font-size:1.3rem;font-weight:800;background:var(--g);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:12px}
+.fcopy{color:var(--ts);font-size:0.8rem;opacity:0.5;margin-top:16px}
+.fade-up{opacity:0;transform:translateY(30px);transition:opacity 0.7s ease,transform 0.7s ease}
+.fade-up.vis{opacity:1;transform:translateY(0)}
+@media(max-width:768px){
+nav{padding:14px 16px}.hero{padding:100px 16px 60px}.hero h1{font-size:2rem}
+.stats{gap:20px}.stat-n{font-size:1.4rem}section{padding:60px 16px}
+.agrid{grid-template-columns:1fr;gap:30px}.cgrid{grid-template-columns:1fr;gap:30px}
+.wa-float{bottom:70px;right:14px;width:48px;height:48px;font-size:22px}
+}
+</style>
+</head>
+<body>
+<a href="https://wa.me/12393896999" class="wa-float" target="_blank">💬</a>
+<div class="sticky" id="stickyCta">
+<div style="font-size:0.85rem"><strong style="color:#fff">💆 Ready?</strong> <span style="color:var(--ts)">Get started today</span></div>
+<div style="display:flex;gap:8px">
+<a href="https://wa.me/12393896999" class="sbtn sbtn-w">💬 WhatsApp</a>
+<a href="#contact" class="sbtn sbtn-c">📞 Call Now</a>
+</div>
+</div>
+<nav><div class="logo">Tender touch massage</div><a href="#contact" class="ncta">Get Started</a></nav>
+<section class="hero">
+<div class="hero-bg"></div>
+<div class="hero-c">
+<div class="hero-badge">★★★★★ 5 (45 reviews)</div>
+<h1>Heal. Relax. Restore.</h1>
+<p>Welcome to <strong>Tender touch massage</strong> in <strong>Marco Island, FL</strong>. We provide top-quality massage therapist services to help you achieve your goals.</p>
+<div style="display:flex;gap:16px;flex-wrap:wrap">
+<a href="#contact" class="btn btn-p">💆 Book Now</a>
+<a href="#services" class="btn btn-s">Our Services</a>
+</div>
+<div class="stats">
+<div><div class="stat-n">5</div><div class="stat-l">Rating</div></div>
+<div><div class="stat-n">45</div><div class="stat-l">Reviews</div></div>
+<div><div class="stat-n">Marco Island</div><div class="stat-l">Location</div></div>
+</div>
+</div>
+</section>
+<section id="services">
+<h2 class="stitle fade-up">Our <span style="background:var(--g);-webkit-background-clip:text;-webkit-text-fill-color:transparent">Services</span></h2>
+<p class="ssub fade-up">Professional massage therapist in Marco Island, FL</p>
+<div class="sgrid">
+<div class="sc fade-up"><div class="si">💆</div><h3>Deep Tissue Massage</h3><p>Targeted pressure to release chronic muscle tension and knots</p></div>
+<div class="sc fade-up"><div class="si">🌿</div><h3>Swedish Massage</h3><p>Relaxing full-body massage to reduce stress and improve circulation</p></div>
+<div class="sc fade-up"><div class="si">🔥</div><h3>Hot Stone Massage</h3><p>Heated stones placed on key points for deep relaxation</p></div>
+<div class="sc fade-up"><div class="si">🤰</div><h3>Prenatal Massage</h3><p>Safe, gentle massage designed for expecting mothers</p></div>
+<div class="sc fade-up"><div class="si">⚡</div><h3>Sports Massage</h3><p>Performance-focused massage for athletes and active individuals</p></div>
+<div class="sc fade-up"><div class="si">🧘</div><h3>Aromatherapy</h3><p>Essential oil massage for mind-body wellness</p></div>
+</div>
+</section>
+<section id="about" class="about">
+<div class="agrid">
+<div class="aimg fade-up">💆</div>
+<div class="acon fade-up">
+<h2>Why Choose <span style="background:var(--g);-webkit-background-clip:text;-webkit-text-fill-color:transparent">Tender touch massage?</span></h2>
+<p>Our licensed massage therapists provide personalized treatments to help you recover, relax, and feel your best.</p>
+<p>Located in the heart of Marco Island, FL, we serve clients throughout the Marco Island area. Our commitment to quality and customer satisfaction has earned us a 5 rating from 45 happy clients.</p>
+<div style="margin-top:24px">
+<div style="display:flex;align-items:center;gap:10px;margin-bottom:12px"><span style="color:var(--pl)">✓</span> Licensed & Insured</div>
+<div style="display:flex;align-items:center;gap:10px;margin-bottom:12px"><span style="color:var(--pl)">✓</span> Experienced Professionals</div>
+<div style="display:flex;align-items:center;gap:10px;margin-bottom:12px"><span style="color:var(--pl)">✓</span> Satisfaction Guaranteed</div>
+<div style="display:flex;align-items:center;gap:10px"><span style="color:var(--pl)">✓</span> Serving Marco Island & Surrounding Areas</div>
+</div>
+</div>
+</div>
+</section>
+<section id="contact" class="contact">
+<h2 class="stitle fade-up">Contact <span style="background:var(--g);-webkit-background-clip:text;-webkit-text-fill-color:transparent">Us</span></h2>
+<p class="ssub fade-up">Ready to get started? Reach out today!</p>
+<div class="cgrid">
+<div class="fade-up">
+<h3 style="font-size:1.3rem;font-weight:700;margin-bottom:20px">Get In Touch</h3>
+<div class="ci"><div class="cicon">📍</div><div class="ctxt"><strong>Address</strong>651 S Collier Blvd #2e, Marco Island, FL 34145, USA</div></div>
+<div class="ci"><div class="cicon">📞</div><div class="ctxt"><strong>Phone</strong>+1 (239) 389-6999</div></div>
+<div class="ci"><div class="cicon">💬</div><div class="ctxt"><strong>WhatsApp</strong>+1 (239) 389-6999</div></div>
+<div class="ci"><div class="cicon">⏰</div><div class="ctxt"><strong>Hours</strong>Mon-Fri: 9AM-6PM | Sat: 9AM-2PM</div></div>
+<div style="margin-top:24px"><a href="https://wa.me/12393896999" class="btn btn-p" style="width:100%;justify-content:center">💬 Message on WhatsApp</a></div>
+</div>
+<div class="fade-up">
+<div class="mwrap">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100000!2d-81.8!3d26.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sMarco%20Island%2C%20FL!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</div>
+</div>
+</section>
+<footer>
+<div class="flogo">Tender touch massage</div>
+<p style="color:var(--ts);font-size:0.85rem">massage therapist in Marco Island, FL</p>
+<p class="fcopy">© 2025 Tender touch massage. All rights reserved.</p>
+</footer>
+<script>
+const obs=new IntersectionObserver((e)=>{e.forEach(el=>{if(el.isIntersecting)el.target.classList.add('vis')})},{threshold:0.1});
+document.querySelectorAll('.fade-up').forEach(el=>obs.observe(el));
+const sticky=document.getElementById('stickyCta');
+let shown=false;
+window.addEventListener('scroll',()=>{if(!shown&&window.scrollY>window.innerHeight*0.5){sticky.classList.add('vis');shown=true}});
+</script>
+</body>
+</html>
