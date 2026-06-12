@@ -1247,43 +1247,105 @@ footer {
 
 /* ══════════ RESPONSIVE ══════════ */
 @media (max-width: 1024px) {
-  .hero-inner { grid-template-columns: 1fr; }
+  .hero-inner { grid-template-columns: 1fr; gap: 40px; }
+  .hero-card { max-width: 420px; margin: 0 auto; }
   .about-grid { gap: 50px; }
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+  .testimonials-grid { grid-template-columns: repeat(2, 1fr); }
+  .pricing-grid { grid-template-columns: repeat(2, 1fr); }
+  .pricing-card.featured { transform: none; }
 }
 
 @media (max-width: 768px) {
   nav { padding: 14px 20px; }
   .nav-links { display: none; }
 
-  .hero { padding: 120px 20px 80px; }
+  .hero { padding: 110px 20px 70px; }
+  .hero-inner { grid-template-columns: 1fr; gap: 32px; }
   .hero h1 { font-size: 2.2rem; }
-  .hero-right { display: none; }
-  .hero-stats { gap: 28px; }
-  .hero-stat-value { font-size: 1.6rem; }
+  .hero-desc { font-size: 1rem; }
+  .hero-stats { gap: 20px; flex-wrap: wrap; }
+  .hero-stat-value { font-size: 1.5rem; }
   .hero-buttons { flex-direction: column; }
-  .hero-buttons a { text-align: center; justify-content: center; }
+  .hero-buttons a { text-align: center; justify-content: center; width: 100%; }
+  .hero-card { padding: 28px; max-width: 100%; }
+  .hero-card-stats { gap: 12px; }
 
-  .section { padding: 72px 20px; }
+  .section { padding: 64px 20px; }
+  .section-header { margin-bottom: 40px; }
+  .section-title { font-size: 1.8rem; }
 
-  .services-grid { grid-template-columns: 1fr; }
-  .about-grid { grid-template-columns: 1fr; gap: 40px; }
-  .about-glow { width: 240px; height: 240px; font-size: 6rem; }
-  .about-float-badge.top-right { position: static; margin-top: 20px; }
-  .about-float-badge.bot-left { position: static; margin-top: 12px; }
+  .services-grid { grid-template-columns: 1fr; gap: 16px; }
+  .service-card { padding: 28px 22px; }
+
+  .about-grid { grid-template-columns: 1fr; gap: 32px; }
+  .about-glow { width: 200px; height: 200px; font-size: 5rem; }
+  .about-float-badge { display: none; }
   .about-features { grid-template-columns: 1fr; }
-  .testimonials-grid { grid-template-columns: 1fr; }
-  .pricing-grid { grid-template-columns: 1fr; }
+
+  .testimonials-grid { grid-template-columns: 1fr; gap: 16px; }
+  .testimonial-card { padding: 28px; }
+
+  .pricing-grid { grid-template-columns: 1fr; gap: 16px; }
+  .pricing-card { padding: 32px 24px; }
   .pricing-card.featured { transform: none; }
-  .pricing-card.featured:hover { transform: translateY(-6px); }
-  .booking-inner { grid-template-columns: 1fr; padding: 36px 24px; gap: 32px; }
-  .booking-cal-embed iframe { height: 320px; }
-  .contact-grid { grid-template-columns: 1fr; gap: 32px; }
+  .pricing-card.featured:hover { transform: translateY(-4px); }
+
+  .booking-inner { grid-template-columns: 1fr; padding: 28px 20px; gap: 28px; }
+  .booking-cal-embed iframe { height: 280px; }
+  .booking-perks { gap: 10px; }
+
+  .faq-list { max-width: 100%; }
+  .faq-question { font-size: 0.9rem; padding: 16px 20px; }
+
+  .contact-grid { grid-template-columns: 1fr; gap: 28px; }
+  .contact-item { padding: 12px; }
+  .map-iframe { height: 240px; }
+
+  footer { padding: 48px 20px 32px; }
+  .footer-links { gap: 4px; }
+  .footer-links a { font-size: 0.78rem; padding: 4px 10px; }
+
+  .whatsapp-float { width: 52px; height: 52px; font-size: 1.5rem; bottom: 20px; right: 20px; }
+  #stickyCta { padding: 10px 16px; gap: 8px; }
+  .sticky-btn { padding: 10px 20px; font-size: 0.82rem; }
 }
 
 @media (max-width: 480px) {
-  .hero h1 { font-size: 1.9rem; }
-  .section-title { font-size: 1.6rem; }
-  .pricing-price { font-size: 2.2rem; }
+  .hero { padding: 100px 16px 60px; }
+  .hero h1 { font-size: 1.8rem; }
+  .hero-badge { font-size: 0.75rem; padding: 6px 14px; }
+  .hero-stats { gap: 16px; }
+  .hero-stat-value { font-size: 1.3rem; }
+  .hero-stat-label { font-size: 0.7rem; }
+  .btn-primary, .btn-secondary { padding: 13px 24px; font-size: 0.88rem; }
+
+  .section { padding: 48px 16px; }
+  .section-title { font-size: 1.5rem; }
+  .section-subtitle { font-size: 0.9rem; }
+  .section-label { font-size: 0.7rem; }
+
+  .service-card { padding: 22px 18px; }
+  .service-icon { width: 44px; height: 44px; font-size: 1.2rem; }
+
+  .about-glow { width: 160px; height: 160px; font-size: 4rem; }
+  .about-content h2 { font-size: 1.5rem; }
+
+  .pricing-price { font-size: 2rem; }
+  .pricing-name { font-size: 1.1rem; }
+
+  .booking-inner { padding: 22px 16px; }
+  .booking-info h3 { font-size: 1.2rem; }
+
+  .testimonial-card { padding: 22px; }
+  .t-text { font-size: 0.85rem; }
+
+  .hero-card-text { font-size: 0.85rem; }
+  .hero-card-stat-val { font-size: 1.1rem; }
+
+  .whatsapp-float { width: 48px; height: 48px; font-size: 1.3rem; bottom: 16px; right: 16px; }
+  #stickyCta { padding: 8px 12px; }
+  .sticky-btn { padding: 8px 16px; font-size: 0.78rem; }
 }
 
 @keyframes pulse {
